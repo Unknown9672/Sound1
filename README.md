@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Funny Prank</title>
+<title>Secret Photo Scanner 📸</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{
@@ -9,104 +9,39 @@ body{
   color:white;
   text-align:center;
   font-family:Arial;
-  margin-top:120px;
 }
-button{
-  font-size:25px;
-  padding:15px 30px;
+img{
+  width:250px;
+  border-radius:15px;
+  margin-top:20px;
+}
+h1{
+  color:red;
 }
 </style>
 </head>
-
 <body>
 
-<h1>🎁 CLICK FOR SURPRISE 🎁</h1>
+<h1>📸 SECRET PHOTO SCANNER</h1>
 
-<button onclick="prank()">CLICK ME</button>
+<p>Click the photo to scan for hidden secrets 😈</p>
+
+<img src="photo.jpg" onclick="playPrank()">
+
+<p id="msg"></p>
 
 <audio id="sound">
-  <source src="bakra_bo_bo_booo(128k).mp3" type="audio/mpeg">
+  <source src="bakra.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-function prank() {
-
+function playPrank() {
   document.getElementById("sound").play();
 
-  if (navigator.vibrate) {
-    navigator.vibrate([500,200,500,200,1000]);
-  }
-
+  document.getElementById("msg").innerHTML =
+    "🐐 SCAN COMPLETE! Bakra Level: 100% 😂";
 }
 </script>
 
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-<title>Funny Prank</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{
-  background:black;
-  color:white;
-  text-align:center;
-  font-family:Arial;
-  margin-top:120px;
-}
-button{
-  font-size:25px;
-  padding:15px 30px;
-}
-</style>
-</head>
-
-<body>
-
-<h1>🎁 CLICK FOR SURPRISE 🎁</h1>
-
-<button onclick="prank()">CLICK ME</button>
-
-<audio id="sound">
-  <source src="bakra_bo_bo_booo(128k).mp3" type="audio/mpeg">
-</audio>
-
-<script>
-function prank() {
-
-  document.getElementById("sound").play();
-
-  if (navigator.vibrate) {
-    navigator.vibrate([500,200,500,200,1000]);
-  }
-
-}
-</script>
-
-</body>
-</html>
-
-<button onclick="goFullScreen()">START</button>
-
-<script>
-function goFullScreen() {
-  document.documentElement.requestFullscreen();
-}
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
