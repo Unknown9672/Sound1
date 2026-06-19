@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prank Sound</title>
+</head>
+<body style="text-align:center;margin-top:150px;">
+
+<h1>🎁 CLICK ME 🎁</h1>
+
+<button onclick="prank()">CLICK ME</button>
+
+<audio id="sound">
+  <source src="bakra_bo_bo_booo(128k).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function prank() {
+  document.getElementById("sound").play();
+
+  if (navigator.vibrate) {
+    navigator.vibrate([500,200,500,200,1000]);
+  }
+}
+</script>
+
+</body>
+</html>
+README.md
+index.html
+bakra_bo_bo_booo(128k).mp3
