@@ -86,3 +86,27 @@ function prank() {
 
 </body>
 </html>
+
+<button onclick="goFullScreen()">START</button>
+
+<script>
+function goFullScreen() {
+  document.documentElement.requestFullscreen();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
